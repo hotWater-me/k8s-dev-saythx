@@ -16,8 +16,8 @@ spec:
         app: redis
     spec:
       tolerations:
-      - key: node-role.kubernetes.io/master,
-        operator: Exists,
+      - key: node-role.kubernetes.io/master
+        operator: Exists
         effect: NoSchedule
       containers:
       - image: {{ .Values.redis.image }}:{{ .Values.redis.tag }}
