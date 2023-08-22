@@ -29,7 +29,7 @@ redis:
   replicas: 1
 
 # namespace is the values for deploy namespace
-namespace: work
+namespace: wangyp
 
 # service.type is the values for service type
 service:
