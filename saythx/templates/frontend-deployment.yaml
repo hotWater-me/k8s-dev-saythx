@@ -18,4 +18,4 @@ spec:
       - image: {{ .Values.frontend.image }}:{{ .Values.frontend.tag }}
         name: frontend
         ports:
-        - containerPort: 80
+        - containerPort: 3000
