@@ -14,6 +14,10 @@ spec:
       labels:
         app: frontend
     spec:
+      tolerations:
+      - key: node-role.kubernetes.io/master,
+        operator: Exists,
+        effect: NoSchedule
       containers:
       - image: {{ .Values.frontend.image }}:{{ .Values.frontend.tag }}
         name: frontend
